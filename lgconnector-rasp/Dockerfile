@@ -4,7 +4,7 @@ FROM resin/rpi-raspbian:latest
 # Add env
 ENV LANG C.UTF-8
 
-ENV LGCONNECTOR4HASSIO_VERSION=1.0.0
+ENV LGCONNECTOR4HASSIO_VERSION=1.0.1
 ENV ARCHIVE=lgconnector-$LGCONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
@@ -16,7 +16,7 @@ RUN wget https://raw.githubusercontent.com/miumida/connector4hassio/master/util/
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/lgconnector fison67/lg-connector-rasp:0.0.3
+RUN dockerpull /opt/lgconnector fison67/lg-connector-rasp:beta
 
 # lgconnector copy
 RUN mv /opt/lgconnector/usr/src/app /home/lgconnector
