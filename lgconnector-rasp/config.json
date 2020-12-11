@@ -1,10 +1,10 @@
 {
   "name": "Lg-Connector-rasp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "lgconnector_rasp",
   "description": "Lg-Connector-rasp for Hass.io",
   "auto_uart": true,
-  "url": "https://github.com/miumida/connector4hassio",
+  "url": "https://github.com/reflican/connector4hassio",
   "host_network":true,
   "startup": "before",
   "arch": [
